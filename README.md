@@ -22,6 +22,12 @@ Fill in the blank component based on Vue.js.（基于 Vue.js 的填空组件。�
 
 ## Introduction
 
+实现下面这种填空效果的组件：
+
+```text
+我是______________，喜欢_____、_____和_____。
+```
+
 [⬆ Back to Top](#table-of-contents)
 
 ## Feature
@@ -36,9 +42,43 @@ Fill in the blank component based on Vue.js.（基于 Vue.js 的填空组件。�
 
 ## Install
 
+npm:
+
+```bash
+npm install vue-fill-in-the-blank
+```
+
+Yarn:
+
+```bash
+yarn add vue-fill-in-the-blank
+```
+
 [⬆ Back to Top](#table-of-contents)
 
-## Example
+## Example(Usage)
+
+```vuejs
+<template>
+  <div>
+    我是
+    <vue-fill-in-the-blank>{{'&emsp;'.repeat(20)}}</vue-fill-in-the-blank>，爱好是
+    <vue-fill-in-the-blank>{{'&emsp;'.repeat(20)}}</vue-fill-in-the-blank>
+  </div>
+</template>
+
+<script>
+import VueFillInTheBlank from 'vue-fill-in-the-blank';
+export default {
+  components: {
+    VueFillInTheBlank
+  },
+  data() {
+    return {}
+  }
+}
+</script>
+```
 
 [⬆ Back to Top](#table-of-contents)
 
